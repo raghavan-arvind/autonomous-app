@@ -120,3 +120,11 @@ a:hover {
 a:active {
     color: white;
 }
+
+#container {
+    overflow:hidden;
+}
+
+#critical-container, #major-container, #moderate-container, #minor-container {
+  display: none;
+}

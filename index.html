@@ -4,47 +4,65 @@
 <title>Reporting App Placeholder Name Here</title>
 <meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1.0">
 <link rel="stylesheet" href="assets/css/main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="assets/js/main.js"></script>
 <script type="text/javascript" src="assets/js/slip.js"></script>
 <body>
 <h1>Reporting App Placeholder Name Here</h1><br>
 <p>Swiping and reordering lists of elements on touch screens, no fuss. A&nbsp;tiny library by <a href="//twitter.com/kornelski">Kornel</a>.</p>
 
 <h2>Selector</h2>
-<ol id="demo1" class="slippylist">
-    <a href="#" target="_blank"><li class="demo-no-swipe" style="background: red;">Critical</li></a>
-    <a href="#" target="_blank"><li class="demo-no-swipe" style="background: #FF4500;">Major</li></a>
-    <a href="#" target="_blank"><li class="demo-no-swipe" style="background: #ff8d00;">Moderate</li></a>
-    <a href="#" target="_blank"><li class="demo-no-swipe" style="background: #ffae42;">Minor</li></a>
+<ol id="selector" class="slippylist">
+    <!-- <a href="#" target="_blank"> -->
+    <a><li class="demo-no-swipe" style="background: red;" onclick="showCritical()">Critical</li></a>
+    <a><li class="demo-no-swipe" style="background: #FF4500;" onclick="showMajor()">Major</li></a>
+    <a><li class="demo-no-swipe" style="background: #ff8d00;" onclick="showModerate()">Moderate</li></a>
+    <a><li class="demo-no-swipe" style="background: #ffae42;" onclick="showMinor()">Minor</li></a>
 </ol>
 
-<h2>Critical</h2>
-<ol id="demo2" class="slippylist">
-    <li class="">A</li>
-    <li class="">B</li>
-    <li class="">C</li>
-    <li class="">D</li>
-    <li class="">E</li>
-</ol>
+<div id="critical-container">
+  <h2>Critical</h2>
+  <ol id="critical" class="slippylist">
+      <li class="">A</li>
+      <li class="">B</li>
+      <li class="">C</li>
+      <li class="">D</li>
+      <li class="">E</li>
+  </ol>
+</div>
 
-<h2>Major</h2>
-<ol id="demo3" class="slippylist">
-    <li class="">A</li>
-    <li class="">B</li>
-    <li class="">C</li>
-    <li class="">D</li>
-    <li class="">E</li>
-</ol>
+<div id="major-container">
+  <h2>Major</h2>
+  <ol id="major" class="slippylist">
+      <li class="">A</li>
+      <li class="">B</li>
+      <li class="">C</li>
+      <li class="">D</li>
+      <li class="">E</li>
+  </ol>
+</div>
 
-<h2>Moderate</h2>
-<ol id="demo4" class="slippylist">
-    <li class="">A</li>
-    <li class="">B</li>
-    <li class="">C</li>
-    <li class="">D</li>
-    <li class="">E</li>
-</ol>
+<div id="moderate-container">
+  <h2>Moderate</h2>
+  <ol id="moderate" class="slippylist">
+      <li class="">A</li>
+      <li class="">B</li>
+      <li class="">C</li>
+      <li class="">D</li>
+      <li class="">E</li>
+  </ol>
+</div>
 
-Minor
+<div id="minor-container">
+  <h2>Minor</h2>
+  <ol id="minor" class="slippylist">
+      <li class="">A</li>
+      <li class="">B</li>
+      <li class="">C</li>
+      <li class="">D</li>
+      <li class="">E</li>
+  </ol>
+</div>
 
 </div>
 
@@ -94,9 +112,10 @@ Minor
         }, false);
         return new Slip(list);
     }
-    setupSlip(document.getElementById('demo1'));
-    setupSlip(document.getElementById('demo2'));
-    setupSlip(document.getElementById('demo3'));
-    setupSlip(document.getElementById('demo4'));
+    setupSlip(document.getElementById('selector'));
+    setupSlip(document.getElementById('critical'));
+    setupSlip(document.getElementById('major'));
+    setupSlip(document.getElementById('moderate'));
+    setupSlip(document.getElementById('minor'));
 
 </script>
