@@ -1,6 +1,7 @@
 import requests
 from flask import Flask, render_template, jsonify, request, abort
 import pickle
+import json
 
 app = Flask(__name__)
 events = dict()
@@ -36,9 +37,8 @@ def post_event():
 
 @app.route('/test', methods=['GET'])
 def ask_event():
-    print(events[1])
     headers = {"Content-Type": "application/json"}
-    r = requests.post('http://localhost:8000/', data = events[1], headers=headers)
+    r = requests.post('http://localhost:8000/', data=json.dumps(events[1]), headers=headers)
 
     return ('', 200)
 
