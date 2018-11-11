@@ -25,3 +25,10 @@ function showPersonal() {
   document.getElementById('local-container').style.display = 'none';
   document.getElementById('personal-container').style.display = 'block';
 }
+
+function hideAll() {
+  document.getElementById('danger-container').style.display = 'none';
+  document.getElementById('laws-container').style.display = 'none';
+  document.getElementById('local-container').style.display = 'none';
+  document.getElementById('personal-container').style.display = 'none';
+}
