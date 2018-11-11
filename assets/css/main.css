@@ -128,3 +128,22 @@ a:active {
 #danger-container, #laws-container, #local-container, #personal-container {
   display: none;
 }
+
+input, select {
+    width: 100%;
+    padding: 6px 8px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+    color: black;
+}
+
+table {
+  color: white;
+  border-spacing: 0;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
