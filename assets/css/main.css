@@ -125,6 +125,6 @@ a:active {
     overflow:hidden;
 }
 
-#critical-container, #major-container, #moderate-container, #minor-container {
+#danger-container, #laws-container, #local-container, #personal-container {
   display: none;
 }

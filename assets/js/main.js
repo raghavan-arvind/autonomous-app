@@ -1,27 +1,27 @@
-function showCritical() {
-  document.getElementById('critical-container').style.display = 'block';
-  document.getElementById('major-container').style.display = 'none';
-  document.getElementById('moderate-container').style.display = 'none';
-  document.getElementById('minor-container').style.display = 'none';
+function showDanger() {
+  document.getElementById('danger-container').style.display = 'block';
+  document.getElementById('laws-container').style.display = 'none';
+  document.getElementById('local-container').style.display = 'none';
+  document.getElementById('personal-container').style.display = 'none';
 }
 
-function showMajor() {
-  document.getElementById('critical-container').style.display = 'none';
-  document.getElementById('major-container').style.display = 'block';
-  document.getElementById('moderate-container').style.display = 'none';
-  document.getElementById('minor-container').style.display = 'none';
+function showLaws() {
+  document.getElementById('danger-container').style.display = 'none';
+  document.getElementById('laws-container').style.display = 'block';
+  document.getElementById('local-container').style.display = 'none';
+  document.getElementById('personal-container').style.display = 'none';
 }
 
-function showModerate() {
-  document.getElementById('critical-container').style.display = 'none';
-  document.getElementById('major-container').style.display = 'none';
-  document.getElementById('moderate-container').style.display = 'block';
-  document.getElementById('minor-container').style.display = 'none';
+function showLocal() {
+  document.getElementById('danger-container').style.display = 'none';
+  document.getElementById('laws-container').style.display = 'none';
+  document.getElementById('local-container').style.display = 'block';
+  document.getElementById('personal-container').style.display = 'none';
 }
 
-function showMinor() {
-  document.getElementById('critical-container').style.display = 'none';
-  document.getElementById('major-container').style.display = 'none';
-  document.getElementById('moderate-container').style.display = 'none';
-  document.getElementById('minor-container').style.display = 'block';
+function showPersonal() {
+  document.getElementById('danger-container').style.display = 'none';
+  document.getElementById('laws-container').style.display = 'none';
+  document.getElementById('local-container').style.display = 'none';
+  document.getElementById('personal-container').style.display = 'block';
 }
