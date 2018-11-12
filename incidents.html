@@ -7,15 +7,25 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="assets/js/main.js"></script>
 <script type="text/javascript" src="assets/js/slip.js"></script>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <style>
+    body {
+    max-width: 100%;
+    }
+    </style>
+</head>
 <body>
-<h1>Reporting App Placeholder Name Here</h1>
+  <div id="all">
+<h1>AutoLearn</h1>
+<br><br><br>
+<p>Review your drive's incident reports and add additional feedback if applicable.</p>
 <br>
-<p>View incidents here.</p>
-
+<div id="center">
+  <!-- <table id="center"> -->
   <table>
     <tr>
       <th>Time</th>
-      <th>Address</th>
       <th>Coordinates</th>
       <th>Image</th>
       <th>Reason</th>
@@ -23,56 +33,63 @@
     </tr>
     <tr>
       <td>11:27</td>
-      <td>2026 Guadalupe St, Austin, TX</td>
       <td>30°17′01″N	30.28350063	97°44′33″W	-97.74239432	0.3957	241.047°</td>
-      <td><iframe src="https://www.google.com/maps/embed?pb=!4v1541977513768!6m8!1m7!1sKY91G5CbAL6MU0KeOKDzxA!2m2!1d30.28341042028074!2d-97.74190780379456!3f271.50592!4f0!5f0.7820865974627469" width="400" height="266" frameborder="0" style="border:0" allowfullscreen></iframe></td>
+      <td><iframe id="streetview" onload="iframeLoaded()" src="https://www.google.com/maps/embed?pb=!4v1541977513768!6m8!1m7!1sKY91G5CbAL6MU0KeOKDzxA!2m2!1d30.28341042028074!2d-97.74190780379456!3f271.50592!4f0!5f0.7820865974627469" width="400" height="266" frameborder="0" style="border:0" allowfullscreen></iframe></td>
       <td>Endangerment of Life > Pedestrians & Animals</td>
       <td><input placeholder=""</td>
     </tr>
     <tr>
       <td>14:33</td>
-      <td>Etter-Harbin Alumni Center, 2110 San Jacinto Blvd, Austin, TX</td>
       <td>30°17′04″N	30.28457228	97°43′52″W	-97.73107457	0.3497	109.632°</td>
-      <td><iframe src="https://www.google.com/maps/embed?pb=!4v1541977566313!6m8!1m7!1sCAoSLEFGMVFpcE9BVVJERGxvSktBUVJ5elhSSl9sRFBDRGJfc0tKbUV1bXFiM2pV!2m2!1d30.2866669!2d-97.73278049999999!3f248.22333356709933!4f-3.2697148935413622!5f0.7820865974627469" width="400" height="266" frameborder="0" style="border:0" allowfullscreen></iframe></td>
+      <td><iframe id="streetview" onload="iframeLoaded()" src="https://www.google.com/maps/embed?pb=!4v1541977566313!6m8!1m7!1sCAoSLEFGMVFpcE9BVVJERGxvSktBUVJ5elhSSl9sRFBDRGJfc0tKbUV1bXFiM2pV!2m2!1d30.2866669!2d-97.73278049999999!3f248.22333356709933!4f-3.2697148935413622!5f0.7820865974627469" width="400" height="266" frameborder="0" style="border:0" allowfullscreen></iframe></td>
       <td>Road Laws > Missed Traffic Sign</td>
       <td></td>
     </tr>
     <tr>
       <td>19:22</td>
-      <td>210 E Martin Luther King Jr Blvd, Austin, TX</td>
       <td>30°16′50″N	30.28063361	97°44′12″W	-97.73672188	0.3898	181.13°</td>
-      <td><iframe src="https://www.google.com/maps/embed?pb=!4v1541977608709!6m8!1m7!1sJZPU1iasNDqCQk0NzB29CQ!2m2!1d30.28063066204208!2d-97.73672964946405!3f52.680355!4f0!5f0.7820865974627469" width="400" height="266" frameborder="0" style="border:0" allowfullscreen></iframe></td>
+      <td><iframe id="streetview" onload="iframeLoaded()" src="https://www.google.com/maps/embed?pb=!4v1541977608709!6m8!1m7!1sJZPU1iasNDqCQk0NzB29CQ!2m2!1d30.28063066204208!2d-97.73672964946405!3f52.680355!4f0!5f0.7820865974627469" width="400" height="266" frameborder="0" style="border:0" allowfullscreen></iframe></td>
       <td>Local Norms > Following Distance</td>
       <td><input placeholder=""</td>
     </tr>
     <tr>
       <td>20:21</td>
-      <td>1901 Guadalupe St, Austin, TX</td>
       <td>30°16′56″N	30.28212723	97°44′31″W	-97.74187224	0.4259	227.722°</td>
-      <td><iframe src="https://www.google.com/maps/embed?pb=!4v1541977638708!6m8!1m7!1sviE-9BHtGCSY3nkq1bAA1A!2m2!1d30.28195516671235!2d-97.74196701595127!3f69.3218!4f0!5f0.7820865974627469" width="400" height="266" frameborder="0" style="border:0" allowfullscreen></iframe></td>
+      <td><iframe id="streetview" onload="iframeLoaded()" src="https://www.google.com/maps/embed?pb=!4v1541977638708!6m8!1m7!1sviE-9BHtGCSY3nkq1bAA1A!2m2!1d30.28195516671235!2d-97.74196701595127!3f69.3218!4f0!5f0.7820865974627469" width="400" height="266" frameborder="0" style="border:0" allowfullscreen></iframe></td>
       <td>Local Norms > Passing Cars</td>
       <td><input placeholder=""</td>
     </tr>
     <tr>
       <td>21:19</td>
-      <td>400 Martin Luther King/Trinity, Austin, TX</td>
       <td>30°16′48″N	30.27991919	97°44′04″W	-97.73441154	0.458	163.483°</td>
-      <td><iframe src="https://www.google.com/maps/embed?pb=!4v1541977666867!6m8!1m7!1sMCEAJqyXYDQCYi-PYnifhw!2m2!1d30.27963754012855!2d-97.73430918904549!3f11.11737!4f0!5f0.7820865974627469" width="400" height="266" frameborder="0" style="border:0" allowfullscreen></iframe></td>
+      <td><iframe id="streetview" onload="iframeLoaded()" src="https://www.google.com/maps/embed?pb=!4v1541977666867!6m8!1m7!1sMCEAJqyXYDQCYi-PYnifhw!2m2!1d30.27963754012855!2d-97.73430918904549!3f11.11737!4f0!5f0.7820865974627469" width="400" height="266" frameborder="0" style="border:0" allowfullscreen></iframe></td>
       <td>Personal Preferences > Rolling Stop</td>
       <td><input placeholder=""</td>
     </tr>
     <tr>
       <td>21:34</td>
-      <td>301 E Dean Keeton St, Austin, TX</td>
       <td>30°17′19″N	30.28873058	97°44′06″W	-97.73487972	0.1983	31.041°</td>
-      <td><iframe src="https://www.google.com/maps/embed?pb=!4v1541977685018!6m8!1m7!1smLdobsWddxJDQtN2vhBIkg!2m2!1d30.28931460149666!2d-97.73543668170471!3f188.44923!4f0!5f0.7820865974627469" width="400" height="266" frameborder="0" style="border:0" allowfullscreen></iframe></td>
+      <td><iframe id="streetview" onload="iframeLoaded()" src="https://www.google.com/maps/embed?pb=!4v1541977685018!6m8!1m7!1smLdobsWddxJDQtN2vhBIkg!2m2!1d30.28931460149666!2d-97.73543668170471!3f188.44923!4f0!5f0.7820865974627469" width="400" height="266" frameborder="0" style="border:0" allowfullscreen></iframe></td>
       <td>Endangerment of Life > Pedestrians & Animals</td>
       <td><input placeholder=""</td>
     </tr>
   </table>
+</div>
 
 
 
+<!-- </div>
+  <script type="text/javascript">
+    function iframeLoaded() {
+        var iFrameID = document.getElementById('streetview');
+        if(iFrameID) {
+              // here you can make the height, I delete it first, then I make it again
+              iFrameID.height = "";
+              iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
+        }
+    }
+  </script> -->
 
-  </script>
+
+<!-- <iframe id="streetview" onload="iframeLoaded()" frameborder="0s" src="yourpage.php" height="100%" width="100%" scrolling="no"></iframe> -->
 </body>
